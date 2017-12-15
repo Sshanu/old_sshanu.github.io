@@ -7,34 +7,513 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Shanu Kumar</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="/project/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Deep Learning</title>
-      <link>https://sshanu.github.io/project/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Automated Library</title>
+      <link>https://sshanu.github.io/project/automated-library/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sshanu.github.io/project/deep-learning/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+      <guid>https://sshanu.github.io/project/automated-library/</guid>
+      <description>
 
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+&lt;p&gt;An automated library software to catalogue books and efficiently displays its details.&lt;/p&gt;
 
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+&lt;p&gt;For more details &lt;a href=&#34;https://sshanu.github.io/files/library.pdf&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
 
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Implemented in Django Framework and MySql database.&lt;/li&gt;
+&lt;li&gt;Goodreads Api is used for book description, review, rating and book cover.&lt;/li&gt;
+&lt;li&gt;Automatic fine calculation.&lt;/li&gt;
+&lt;li&gt;A reminder mail is send when a book is due.&lt;/li&gt;
+&lt;li&gt;User&amp;rsquo;s image is displayed from IITK database.&lt;/li&gt;
+&lt;li&gt;Admin and various staff accounts.&lt;/li&gt;
+&lt;li&gt;Bing Search.&lt;/li&gt;
+&lt;li&gt;Trending Section of every week.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
     <item>
-      <title>External Project</title>
-      <link>https://sshanu.github.io/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <title>Grain Assaying</title>
+      <link>https://sshanu.github.io/project/grain-assaying/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sshanu.github.io/project/example-external-project/</guid>
-      <description></description>
+      <guid>https://sshanu.github.io/project/grain-assaying/</guid>
+      <description>
+
+&lt;p&gt;NAM (National Agriculture Market) is an online portal introduced
+by the government, to connect all the farmers online
+with the traders, so that farmers get the best price for their
+produce.&lt;/p&gt;
+
+&lt;p&gt;Our project aimed to facilitate the process by introducing
+automatic grain quality assessment from an image of
+spread out sample of grain.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ankuPRK/DIP-Grain-Project&#34; target=&#34;_blank&#34;&gt;Github Repository&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
+
+&lt;p&gt;We couldn&amp;rsquo;t find any weight existing grain dataset for this task, so we collected 8 samples of different qualities of wheat grain from the Anaj mandi, Kanpur. Grains of each sample were manually separated into three categories: full grain, broken grain and foreign particles.&lt;/p&gt;
+
+&lt;h2 id=&#34;preprocessing&#34;&gt;Preprocessing&lt;/h2&gt;
+
+&lt;p&gt;The image taken should have a mono-color background
+and sufficiently illuminated. In our dataset we have chosen
+green as background color.
+* To remove the shadow effect of grains we take the red channel of the image which doesn’t have shadows in case when background is green.
+* We then employ gaussian filter to remove noise and smoothen it.
+* The image is further sharpened to enhance the edges of overlapping grains.
+* It is then converted to binary image using threshold.
+* The binarized image has lots of dots and overlapping particles. We use morphological processes for removing stray dots.&lt;/p&gt;
+
+&lt;h2 id=&#34;segmentation&#34;&gt;Segmentation&lt;/h2&gt;
+
+&lt;p&gt;This step takes binary image as input and gives the clusters of
+grains as output. The steps are
+* Find all the connected components in the binary image.
+* Remove all components with pixel area less than a threshold.
+* Each remaining component is a particle segment.&lt;/p&gt;
+
+&lt;h2 id=&#34;watershed-segmentation&#34;&gt;Watershed Segmentation&lt;/h2&gt;
+
+&lt;p&gt;The term ”Watershed” means the ridges that separate water
+flowing to different basin. In such scenario water in
+each basin travels downward towards it’s local minima. A
+grayscale image can be thought of as a surface whose height
+at each point is proportional to the grayscale value at each
+point. The lighter pixels are near peaks while darker pixels
+are near catchment basin. To construct such type of surface,
+the distance transform of the image is found. The distance
+transform calculates distance of nearest pixel with non-zero
+value for each point. The distance transform is further inverted
+to construct catchment basin instead of peaks. We use
+matlab’s inbuilt function that uses Fernand Meyer algorithm to find watershed segmentation of the image.&lt;/p&gt;
+
+&lt;h2 id=&#34;distance-tranform&#34;&gt;Distance Tranform&lt;/h2&gt;
+
+&lt;p&gt;The distance transform is an operator normally only applied to binary images. The result of the transform is a graylevel image that looks similar to the input image, except that the graylevel intensities of points inside foreground regions are changed to show the distance to the closest boundary from each point.
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;https://sshanu.github.io/img/dt.gif&#34;&gt;
+&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;https://sshanu.github.io/img/dt_fig.png&#34;&gt;
+&lt;/p&gt;
+&lt;span class=&#34;caption text-muted&#34;&gt;Distance Tranform Example&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The steps of segmentation can be summarised as
+* Take the binary image of segment in question.
+* Obtain its distance transform.
+* Invert the Distance transform and remove unwanted minimas.
+* Apply watershed segmentation.&lt;/p&gt;
+
+&lt;h2 id=&#34;feature-extraction&#34;&gt;Feature Extraction&lt;/h2&gt;
+
+&lt;p&gt;Each segment is taken and the following
+basic features are extracted from it: color, size : A_seg / A_avg  where A_seq is pixel area of segment, the major axis length and minor axis length of segment.&lt;/p&gt;
+
+&lt;h2 id=&#34;classification&#34;&gt;Classification&lt;/h2&gt;
+
+&lt;p&gt;For Classification we use following classifiers:
+SVM and KNN with n = 5.&lt;/p&gt;
+
+&lt;h2 id=&#34;result&#34;&gt;Result&lt;/h2&gt;
+
+&lt;p&gt;Maximum accuracy is achived using KNN as classifier. But the overlapping grains are being interpreted by the model as some combined shape and
+it call it ’impurity’.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Grain Assaying</title>
+      <link>https://sshanu.github.io/project/handwriting-recognition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sshanu.github.io/project/handwriting-recognition/</guid>
+      <description>
+
+&lt;p&gt;NAM (National Agriculture Market) is an online portal introduced
+by the government, to connect all the farmers online
+with the traders, so that farmers get the best price for their
+produce.&lt;/p&gt;
+
+&lt;p&gt;Our project aimed to facilitate the process by introducing
+automatic grain quality assessment from an image of
+spread out sample of grain.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ankuPRK/DIP-Grain-Project&#34; target=&#34;_blank&#34;&gt;Github Repository&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
+
+&lt;p&gt;We couldn&amp;rsquo;t find any weight existing grain dataset for this task, so we collected 8 samples of different qualities of wheat grain from the Anaj mandi, Kanpur. Grains of each sample were manually separated into three categories: full grain, broken grain and foreign particles.&lt;/p&gt;
+
+&lt;h2 id=&#34;preprocessing&#34;&gt;Preprocessing&lt;/h2&gt;
+
+&lt;p&gt;The image taken should have a mono-color background
+and sufficiently illuminated. In our dataset we have chosen
+green as background color.
+* To remove the shadow effect of grains we take the red channel of the image which doesn’t have shadows in case when background is green.
+* We then employ gaussian filter to remove noise and smoothen it.
+* The image is further sharpened to enhance the edges of overlapping grains.
+* It is then converted to binary image using threshold.
+* The binarized image has lots of dots and overlapping particles. We use morphological processes for removing stray dots.&lt;/p&gt;
+
+&lt;h2 id=&#34;segmentation&#34;&gt;Segmentation&lt;/h2&gt;
+
+&lt;p&gt;This step takes binary image as input and gives the clusters of
+grains as output. The steps are
+* Find all the connected components in the binary image.
+* Remove all components with pixel area less than a threshold.
+* Each remaining component is a particle segment.&lt;/p&gt;
+
+&lt;h2 id=&#34;watershed-segmentation&#34;&gt;Watershed Segmentation&lt;/h2&gt;
+
+&lt;p&gt;The term ”Watershed” means the ridges that separate water
+flowing to different basin. In such scenario water in
+each basin travels downward towards it’s local minima. A
+grayscale image can be thought of as a surface whose height
+at each point is proportional to the grayscale value at each
+point. The lighter pixels are near peaks while darker pixels
+are near catchment basin. To construct such type of surface,
+the distance transform of the image is found. The distance
+transform calculates distance of nearest pixel with non-zero
+value for each point. The distance transform is further inverted
+to construct catchment basin instead of peaks. We use
+matlab’s inbuilt function that uses Fernand Meyer algorithm to find watershed segmentation of the image.&lt;/p&gt;
+
+&lt;h2 id=&#34;distance-tranform&#34;&gt;Distance Tranform&lt;/h2&gt;
+
+&lt;p&gt;The distance transform is an operator normally only applied to binary images. The result of the transform is a graylevel image that looks similar to the input image, except that the graylevel intensities of points inside foreground regions are changed to show the distance to the closest boundary from each point.
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;https://sshanu.github.io/img/dt.gif&#34;&gt;
+&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;https://sshanu.github.io/img/dt_fig.png&#34;&gt;
+&lt;/p&gt;
+&lt;span class=&#34;caption text-muted&#34;&gt;Distance Tranform Example&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The steps of segmentation can be summarised as
+* Take the binary image of segment in question.
+* Obtain its distance transform.
+* Invert the Distance transform and remove unwanted minimas.
+* Apply watershed segmentation.&lt;/p&gt;
+
+&lt;h2 id=&#34;feature-extraction&#34;&gt;Feature Extraction&lt;/h2&gt;
+
+&lt;p&gt;Each segment is taken and the following
+basic features are extracted from it: color, size : A_seg / A_avg  where A_seq is pixel area of segment, the major axis length and minor axis length of segment.&lt;/p&gt;
+
+&lt;h2 id=&#34;classification&#34;&gt;Classification&lt;/h2&gt;
+
+&lt;p&gt;For Classification we use following classifiers:
+SVM and KNN with n = 5.&lt;/p&gt;
+
+&lt;h2 id=&#34;result&#34;&gt;Result&lt;/h2&gt;
+
+&lt;p&gt;Maximum accuracy is achived using KNN as classifier. But the overlapping grains are being interpreted by the model as some combined shape and
+it call it ’impurity’.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Machine Comprehension</title>
+      <link>https://sshanu.github.io/project/machine-comprehension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sshanu.github.io/project/machine-comprehension/</guid>
+      <description>
+
+&lt;p&gt;Machine comprehension is a question answering problem in Natural Language Processing.
+Our aim is to implement the &lt;a href=&#34;https://arxiv.org/pdf/1611.01603.pdf&#34; target=&#34;_blank&#34;&gt;BiDAF&lt;/a&gt; model on our own using &lt;a href=&#34;https://arxiv.org/pdf/1606.05250.pdf&#34; target=&#34;_blank&#34;&gt;SQuAD&lt;/a&gt; dataset and improving the embedding layer by introducing Part-of-speech (POS) embedding.The model will take a passage and questions related to it and will output the answers to the questions or a sub-phrase of the paragraph as a answer.&lt;/p&gt;
+
+&lt;p&gt;Our Code is available at &lt;a href=&#34;https://github.com/Sshanu/Machine-Comprehension&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; and for more details: &lt;a href=&#34;https://sshanu.github.io/files/cs771.pdf&#34;&gt;Project Report&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;bidaf&#34;&gt;BiDAF&lt;/h2&gt;
+
+&lt;p&gt;We followed the BiDAF model as it is a hierarchical multi-stage architecture consisting of six layers. It includes character-level, word-level, and contextual embeddings; and uses bi-directional attention flow to obtain a query-aware context representation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://sshanu.github.io/img/bidaf.png&#34; alt=&#34;BiDAF&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Word Embedding Layer: We are using &lt;a href=&#34;https://nlp.stanford.edu/projects/glove/&#34; target=&#34;_blank&#34;&gt;GloVE&lt;/a&gt; a pre-trained model to map each word to a vector space.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Character Level Embedding: We obtain the character level embedding of each word using Convolutional Neural Networks (CNN), CNN is best in deriving the local features. Character level embedding enables us to deal with common miss-spellings, different permutations of the word such as run , runs , running etc.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Contextual LSTM: This Layer utilizes contextual information from surrounding words to refine the embedding of the words.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Attention Layer: Attention flow layer is responsible for linking and fusing information from the context and the query words. We compute attention in two directions: from context to query and from query to context.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Modelling Layer: This layer employs a Recurrent Neural Network to scan the context.The output of the modeling layer captures the interaction among the context words conditioned on the query.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Output Layer: QA tasks require the model to find a sub-phrase of the paragraph to answer the query. Output layer predicts the starting and the ending indices of the phrase in the paragraph to answer the query.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;our-contribution&#34;&gt;Our Contribution&lt;/h2&gt;
+
+&lt;p&gt;Part-of-speech tagging is the process of marking up a word in a text, corresponding to a particular part of speech; based on both its definition and its context. We aim to capture the relationship with adjacent, related words in a phrase, sentence, or a paragraph. Part of speech helps machine distinguish the context in which a word may be used, consider the example where the word &amp;ldquo;park&amp;rdquo; is used in two different contexts in the ensuing two sentences:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Play in the park.&lt;/li&gt;
+&lt;li&gt;Park the car.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In the first sentence &amp;lsquo;park&amp;rsquo; is a noun, whereas in the second sentence &amp;lsquo;park&amp;rsquo; is a verb.&lt;/p&gt;
+
+&lt;p&gt;We used Stanford &lt;a href=&#34;https://nlp.stanford.edu/software/tagger.shtml&#34; target=&#34;_blank&#34;&gt;Part-of-Speech Parser&lt;/a&gt; on the SQuAD dataset for both the context and the query to get the tags.&lt;/p&gt;
+
+&lt;p&gt;We trained the POS Tag embedding using skip gram model.&lt;/p&gt;
+
+&lt;p&gt;After training the Skip gram model on POS tags we got a 50 dimensional POS embedding. Projecting the POS embedding using TSNE we got beautiful clusters of same types of POS tags, which is shown in the Figure 4.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://sshanu.github.io/img/embedding.png&#34; alt=&#34;BiDAF&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We only trained the BiDAF model with POS embedding for only 8k steps with the hyper parameters of BiDAF model and didn&amp;rsquo;t get good result. As, BiDAF was originally trained for 20k steps to achieve an F1 score of 77.3. Our model&amp;rsquo;s performance can be optimized by tweaking the POS embedding: by increasing the number of steps and optimizing the hyper-parameters.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Object Tracking</title>
+      <link>https://sshanu.github.io/project/object-tracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sshanu.github.io/project/object-tracking/</guid>
+      <description>
+
+&lt;h2 id=&#34;relation-classification-using-lstm-networks-along-shortest-dependency-paths&#34;&gt;Relation Classification using LSTM Networks along Shortest Dependency Paths&lt;/h2&gt;
+
+&lt;p&gt;First we implemented a architecture following a paper &lt;a href=&#34;https://pdfs.semanticscholar.org/0f44/366c1e1446cfd51258c68bd1da14fe9c7f10.pdf?_ga=2.136229944.807016038.1498203433-264083776.1497442258&#34; target=&#34;_blank&#34;&gt;Classifying Relations via Long Short Term Memory Networks along Shortest Dependency Paths&lt;/a&gt; by Yan Xu and others.
+This neural architecture utilizes the shortest dependency path between two entities in a sentence.
+The shortest dependency paths retain most relevant information (to relation classification), while eliminating irrelevant words in the sentence.&lt;/p&gt;
+
+&lt;h2 id=&#34;sdp-lstm-model&#34;&gt;SDP-LSTM Model&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://sshanu.github.io/img/lca.jpg&#34; alt=&#34;LCA Shortest Path&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First sentence is parsed to a dependency tree by the &lt;a href=&#34;https://nlp.stanford.edu/software/stanford-dependencies.shtml&#34; target=&#34;_blank&#34;&gt;Stanford parser&lt;/a&gt;, the shortest dependency path(SDP) is extracted as the input of our network.&lt;/p&gt;
+
+&lt;p&gt;Dependency trees are a kind of directed graph, so direction of relation matters. Hence we separate SDP into two sub-paths, each from an entity to the common ancestor node. Along the SDP, three different types of information(as channels) are used, including the words, POS tags, dependency types.
+In each channel, e.g. words, are mapped to real-valued vectors, called embeddings, which capture the underlying meanings of the inputs.&lt;/p&gt;
+
+&lt;h2 id=&#34;channels&#34;&gt;Channels&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Each word in a given sentence is mapped to a real-valued vector by looking up in a word embedding table of Glove (pretrained).&lt;/li&gt;
+&lt;li&gt;Since word embeddings are obtained on a generic corpus of a large scale, the information they contain may not agree with a specific sentence. We deal with this problem by allying each input word with its POS tag, e.g., noun, verb, etc.&lt;/li&gt;
+&lt;li&gt;The dependency types between words provide grammatical relationships in a sentence that can easily be understood and effectively used by people
+without linguistic expertise
+Two recurrent neural networks pick up information along the left and right sub-paths of the SDP.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;recurrent-neural-networks&#34;&gt;Recurrent Neural Networks&lt;/h2&gt;
+
+&lt;p&gt;Recurrent Neural Networks have one problem, known as gradient vanishing or exploding problem. Long short term memory(LSTM) overcome this problem by introducing an adaptive gating mechanism, which keep the previous state and memorize the extracted features of the current data input.
+LSTM-based recurrent neural network comprises four components: an input gate, a forget gate, an output gate, and a memory cell.
+The two SDP-LSTM  propagate bottom-up from the entities to their common ancestor. This way, the model is direction-sensitive.&lt;/p&gt;
+
+&lt;p&gt;A max pooling layer packs, for each sub-path, the recurrent network’s states, to a fixed vector by taking the maximum value in each dimension.
+The pooling layers from different channels are concatenated, and then connected to a hidden layer. Finally, we have a softmax output layer for
+classification.&lt;/p&gt;
+
+&lt;h2 id=&#34;training&#34;&gt;Training&lt;/h2&gt;
+
+&lt;p&gt;We update the model parameters including weights, biases, and embeddings by BPTT and Adam gradient descent with L2-regularization (we regularize weights W and U, not the bias terms b).&lt;/p&gt;
+
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+
+&lt;p&gt;SemEval-2010 Task 8 defines 9 relation types between nominals and a tenth type Other when two nouns have none of these relations. Direction is considered and hence model is trained over 19 relation classes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Relation Classification using LSTMs on Sequences and Tree Structures</title>
+      <link>https://sshanu.github.io/project/relation-classification-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sshanu.github.io/project/relation-classification-1/</guid>
+      <description>
+
+&lt;p&gt;First we implemented a architecture following a paper &lt;a href=&#34;https://pdfs.semanticscholar.org/0f44/366c1e1446cfd51258c68bd1da14fe9c7f10.pdf?_ga=2.136229944.807016038.1498203433-264083776.1497442258&#34; target=&#34;_blank&#34;&gt;Classifying Relations via Long Short Term Memory Networks along Shortest Dependency Paths&lt;/a&gt; by Yan Xu and others.
+This neural architecture utilizes the shortest dependency path between two entities in a sentence.
+The shortest dependency paths retain most relevant information (to relation classification), while eliminating irrelevant words in the sentence.&lt;/p&gt;
+
+&lt;h2 id=&#34;sdp-lstm-model&#34;&gt;SDP-LSTM Model&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://sshanu.github.io/img/lca.jpg&#34; alt=&#34;LCA Shortest Path&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First sentence is parsed to a dependency tree by the &lt;a href=&#34;https://nlp.stanford.edu/software/stanford-dependencies.shtml&#34; target=&#34;_blank&#34;&gt;Stanford parser&lt;/a&gt;, the shortest dependency path(SDP) is extracted as the input of our network.&lt;/p&gt;
+
+&lt;p&gt;Dependency trees are a kind of directed graph, so direction of relation matters. Hence we separate SDP into two sub-paths, each from an entity to the common ancestor node. Along the SDP, three different types of information(as channels) are used, including the words, POS tags, dependency types.
+In each channel, e.g. words, are mapped to real-valued vectors, called embeddings, which capture the underlying meanings of the inputs.&lt;/p&gt;
+
+&lt;h2 id=&#34;channels&#34;&gt;Channels&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Each word in a given sentence is mapped to a real-valued vector by looking up in a word embedding table of Glove (pretrained).&lt;/li&gt;
+&lt;li&gt;Since word embeddings are obtained on a generic corpus of a large scale, the information they contain may not agree with a specific sentence. We deal with this problem by allying each input word with its POS tag, e.g., noun, verb, etc.&lt;/li&gt;
+&lt;li&gt;The dependency types between words provide grammatical relationships in a sentence that can easily be understood and effectively used by people
+without linguistic expertise
+Two recurrent neural networks pick up information along the left and right sub-paths of the SDP.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;recurrent-neural-networks&#34;&gt;Recurrent Neural Networks&lt;/h2&gt;
+
+&lt;p&gt;Recurrent Neural Networks have one problem, known as gradient vanishing or exploding problem. Long short term memory(LSTM) overcome this problem by introducing an adaptive gating mechanism, which keep the previous state and memorize the extracted features of the current data input.
+LSTM-based recurrent neural network comprises four components: an input gate, a forget gate, an output gate, and a memory cell.
+The two SDP-LSTM  propagate bottom-up from the entities to their common ancestor. This way, the model is direction-sensitive.&lt;/p&gt;
+
+&lt;p&gt;A max pooling layer packs, for each sub-path, the recurrent network’s states, to a fixed vector by taking the maximum value in each dimension.
+The pooling layers from different channels are concatenated, and then connected to a hidden layer. Finally, we have a softmax output layer for
+classification.&lt;/p&gt;
+
+&lt;h2 id=&#34;training&#34;&gt;Training&lt;/h2&gt;
+
+&lt;p&gt;We update the model parameters including weights, biases, and embeddings by BPTT and Adam gradient descent with L2-regularization (we regularize weights W and U, not the bias terms b).&lt;/p&gt;
+
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+
+&lt;p&gt;SemEval-2010 Task 8 defines 9 relation types between nominals and a tenth type Other when two nouns have none of these relations. Direction is considered and hence model is trained over 19 relation classes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Relation Classification using LSTMs on Sequences and Tree Structures</title>
+      <link>https://sshanu.github.io/project/relation-classification-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sshanu.github.io/project/relation-classification-2/</guid>
+      <description>
+
+&lt;p&gt;We implemented a architecture based on the paper &lt;a href=&#34;http://www.aclweb.org/anthology/P/P16/P16-1105.pdf&#34; target=&#34;_blank&#34;&gt;End-to-End Relation Extraction using LSTMs
+on Sequences and Tree Structures&lt;/a&gt;. This recurrent neural network based model captures both word sequence and dependency tree substructure information by stacking bidirectional treestructured LSTM-RNNs on bidirectional sequential LSTM-RNNs. This allows our model to jointly represent both entities and relations with shared parameters in a single model.&lt;/p&gt;
+
+&lt;p&gt;Our model allows
+joint modeling of entities and relations in a single
+model by using both bidirectional sequential
+(left-to-right and right-to-left) and bidirectional
+tree-structured (bottom-up and top-down) LSTMRNNs.&lt;/p&gt;
+
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+
+&lt;p&gt;The model mainly consists of three representation layers:
+a embeddings layer, a word sequence based LSTM-RNN layer (sequence layer), and finally a dependency subtree based LSTM-RNN layer (dependency layer).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://sshanu.github.io/img/lstm_tree.jpg&#34; alt=&#34;Relation Classification Network&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;embedding-layer&#34;&gt;Embedding Layer&lt;/h2&gt;
+
+&lt;p&gt;Embedding layer consists of words, part-of-speech (POS) tags, dependency relations.&lt;/p&gt;
+
+&lt;h2 id=&#34;sequence-layer&#34;&gt;Sequence Layer&lt;/h2&gt;
+
+&lt;p&gt;The sequence layer represents words in a linear sequence
+using the representations from the embedding layer. We represent the word sequence in a sentence with bidirectional LSTM-RNNs.
+The LSTM unit at t-th word receives the concatenation of word and POS embeddings as its input vector.&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;https://sshanu.github.io/img/lstm_seq.jpg&#34;&gt;
+&lt;/p&gt;
+
+&lt;p&gt;We also concatenate the hidden state vectors of the two directions’ LSTM units corresponding to each word (denoted as ↑ht and ↓ht) as its output vector (st), and pass it to the subsequent layers.&lt;/p&gt;
+
+&lt;h2 id=&#34;entity-detection&#34;&gt;Entity Detection&lt;/h2&gt;
+
+&lt;p&gt;We perform entity detection on top of the sequence
+layer. We employ a two-layered NN with an hidden layer and a softmax output layer for entity detection.&lt;/p&gt;
+
+&lt;h2 id=&#34;dependency-layer&#34;&gt;Dependency Layer&lt;/h2&gt;
+
+&lt;p&gt;The dependency layer represents a relation between a pair of two target words (corresponding to a relation candidate in relation classification) in
+the dependency tree.&lt;/p&gt;
+
+&lt;p&gt;This layer mainly focuses on the shortest path between a pair of target words in the dependency tree (i.e., the path between the least common node and the two target words).&lt;/p&gt;
+
+&lt;p&gt;We employ bidirectional tree-structured LSTMRNNs (i.e., bottom-up and top-down) to represent a relation candidate by capturing the dependency
+structure around the target word pair. This bidirectional structure propagates to each node not only the information from the leaves but also information from the root. This is especially important for relation classification, which makes use of argument nodes near the bottom of the tree, and our top-down LSTM-RNN sends information from the top of the tree to such near-leaf nodes (unlike in standard bottom-up LSTM-RNNs).&lt;/p&gt;
+
+&lt;p&gt;Tree-structured LSTM-RNN&amp;rsquo;s equations :
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;https://sshanu.github.io/img/lstm_tree_eq.jpg&#34;&gt;
+&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;While we use one node from Shortest Dependency path, then the hidden and current states of the children of this node in Dependency Tree are taken as previous state in LSTM.&lt;/p&gt;
+
+&lt;p&gt;We stack the dependency layers (corresponding to relation candidates) on top of the sequence layer to incorporate both word sequence and dependency tree structure information into the output.
+The dependency-layer LSMT unit at the t-th word recives as input, the concatenation of its corresponding hidden state vectors st in the sequence layer, dependency type embedding.&lt;/p&gt;
+
+&lt;h2 id=&#34;relation-classification&#34;&gt;Relation Classification&lt;/h2&gt;
+
+&lt;p&gt;The relation candidate vector is constructed as
+the concatenation dp = [↑hpA; ↓hp1; ↓hp2], where ↑hpA is the hidden state vector of the top LSTM unit in the bottom-up LSTM-RNN (representing the lowest common ancestor of the target word pair p), and ↓hp1, ↓hp2 are the hidden state vectors of the two LSTM units representing the first and second target words in the top-down LSTMRNN.&lt;/p&gt;
+
+&lt;p&gt;Similarly to the entity detection, we employ a two-layered NN with an hidden layer and a softmax output layer.&lt;/p&gt;
+
+&lt;h2 id=&#34;training&#34;&gt;Training&lt;/h2&gt;
+
+&lt;p&gt;We update the model parameters including weights, biases, and embeddings by BPTT and Adam gradient descent with gradient clipping, L2-regularization
+(we regularize weights W and U, not the bias terms b). We also apply dropout to the embedding layer and to the final hidden layers for entity detection and relation classification. We employ entity pretraining to improve the model.&lt;/p&gt;
+
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+
+&lt;p&gt;SemEval-2010 Task 8 defines 9 relation types between nominals and a tenth type Other when two nouns have none of these relations and no direction is considered.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Word Sense Classification</title>
+      <link>https://sshanu.github.io/project/word-sense/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sshanu.github.io/project/word-sense/</guid>
+      <description>
+
+&lt;h2 id=&#34;relation-classification-using-lstm-networks-along-shortest-dependency-paths&#34;&gt;Relation Classification using LSTM Networks along Shortest Dependency Paths&lt;/h2&gt;
+
+&lt;p&gt;First we implemented a architecture following a paper &lt;a href=&#34;https://pdfs.semanticscholar.org/0f44/366c1e1446cfd51258c68bd1da14fe9c7f10.pdf?_ga=2.136229944.807016038.1498203433-264083776.1497442258&#34; target=&#34;_blank&#34;&gt;Classifying Relations via Long Short Term Memory Networks along Shortest Dependency Paths&lt;/a&gt; by Yan Xu and others.
+This neural architecture utilizes the shortest dependency path between two entities in a sentence.
+The shortest dependency paths retain most relevant information (to relation classification), while eliminating irrelevant words in the sentence.&lt;/p&gt;
+
+&lt;h2 id=&#34;sdp-lstm-model&#34;&gt;SDP-LSTM Model&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://sshanu.github.io/img/lca.jpg&#34; alt=&#34;LCA Shortest Path&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First sentence is parsed to a dependency tree by the &lt;a href=&#34;https://nlp.stanford.edu/software/stanford-dependencies.shtml&#34; target=&#34;_blank&#34;&gt;Stanford parser&lt;/a&gt;, the shortest dependency path(SDP) is extracted as the input of our network.&lt;/p&gt;
+
+&lt;p&gt;Dependency trees are a kind of directed graph, so direction of relation matters. Hence we separate SDP into two sub-paths, each from an entity to the common ancestor node. Along the SDP, three different types of information(as channels) are used, including the words, POS tags, dependency types.
+In each channel, e.g. words, are mapped to real-valued vectors, called embeddings, which capture the underlying meanings of the inputs.&lt;/p&gt;
+
+&lt;h2 id=&#34;channels&#34;&gt;Channels&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Each word in a given sentence is mapped to a real-valued vector by looking up in a word embedding table of Glove (pretrained).&lt;/li&gt;
+&lt;li&gt;Since word embeddings are obtained on a generic corpus of a large scale, the information they contain may not agree with a specific sentence. We deal with this problem by allying each input word with its POS tag, e.g., noun, verb, etc.&lt;/li&gt;
+&lt;li&gt;The dependency types between words provide grammatical relationships in a sentence that can easily be understood and effectively used by people
+without linguistic expertise
+Two recurrent neural networks pick up information along the left and right sub-paths of the SDP.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;recurrent-neural-networks&#34;&gt;Recurrent Neural Networks&lt;/h2&gt;
+
+&lt;p&gt;Recurrent Neural Networks have one problem, known as gradient vanishing or exploding problem. Long short term memory(LSTM) overcome this problem by introducing an adaptive gating mechanism, which keep the previous state and memorize the extracted features of the current data input.
+LSTM-based recurrent neural network comprises four components: an input gate, a forget gate, an output gate, and a memory cell.
+The two SDP-LSTM  propagate bottom-up from the entities to their common ancestor. This way, the model is direction-sensitive.&lt;/p&gt;
+
+&lt;p&gt;A max pooling layer packs, for each sub-path, the recurrent network’s states, to a fixed vector by taking the maximum value in each dimension.
+The pooling layers from different channels are concatenated, and then connected to a hidden layer. Finally, we have a softmax output layer for
+classification.&lt;/p&gt;
+
+&lt;h2 id=&#34;training&#34;&gt;Training&lt;/h2&gt;
+
+&lt;p&gt;We update the model parameters including weights, biases, and embeddings by BPTT and Adam gradient descent with L2-regularization (we regularize weights W and U, not the bias terms b).&lt;/p&gt;
+
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+
+&lt;p&gt;SemEval-2010 Task 8 defines 9 relation types between nominals and a tenth type Other when two nouns have none of these relations. Direction is considered and hence model is trained over 19 relation classes.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

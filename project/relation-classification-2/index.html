@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.31.1" />
+  <meta name="author" content="Shanu Kumar">
+  
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://sshanu.github.io/project/relation-classification-2/">
+
+  
+  
+
+
+  
+
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+
+  
+  <link rel="alternate" href="https://sshanu.github.io/index.xml" type="application/rss+xml" title="Shanu Kumar">
+  <link rel="feed" href="https://sshanu.github.io/index.xml" type="application/rss+xml" title="Shanu Kumar">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://sshanu.github.io/project/relation-classification-2/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Shanu Kumar">
+  <meta property="og:url" content="https://sshanu.github.io/project/relation-classification-2/">
+  <meta property="og:title" content="Relation Classification using LSTMs on Sequences and Tree Structures | Shanu Kumar">
+  <meta property="og:description" content="">
+  <meta property="og:locale" content="en-us">
+  
+  
+  
+  
+
+  
+
+  <title>Relation Classification using LSTMs on Sequences and Tree Structures | Shanu Kumar</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Shanu Kumar</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/files/cv.pdf">
+            
+            <span>CV</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+
+    <div class="pub-title">
+      <h1 itemprop="name">Relation Classification using LSTMs on Sequences and Tree Structures</h1>
+      <span class="pub-authors" itemprop="author">&nbsp;</span>
+      <span class="pull-right">
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Relation%20Classification%20using%20LSTMs%20on%20Sequences%20and%20Tree%20Structures&amp;url=https%3a%2f%2fsshanu.github.io%2fproject%2frelation-classification-2%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fsshanu.github.io%2fproject%2frelation-classification-2%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsshanu.github.io%2fproject%2frelation-classification-2%2f&amp;title=Relation%20Classification%20using%20LSTMs%20on%20Sequences%20and%20Tree%20Structures"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fsshanu.github.io%2fproject%2frelation-classification-2%2f&amp;title=Relation%20Classification%20using%20LSTMs%20on%20Sequences%20and%20Tree%20Structures"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Relation%20Classification%20using%20LSTMs%20on%20Sequences%20and%20Tree%20Structures&amp;body=https%3a%2f%2fsshanu.github.io%2fproject%2frelation-classification-2%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </span>
+    </div>
+
+    
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>We implemented a architecture based on the paper <a href="http://www.aclweb.org/anthology/P/P16/P16-1105.pdf" target="_blank">End-to-End Relation Extraction using LSTMs
+on Sequences and Tree Structures</a>. This recurrent neural network based model captures both word sequence and dependency tree substructure information by stacking bidirectional treestructured LSTM-RNNs on bidirectional sequential LSTM-RNNs. This allows our model to jointly represent both entities and relations with shared parameters in a single model.</p>
+
+<p>Our model allows
+joint modeling of entities and relations in a single
+model by using both bidirectional sequential
+(left-to-right and right-to-left) and bidirectional
+tree-structured (bottom-up and top-down) LSTMRNNs.</p>
+
+<h2 id="model">Model</h2>
+
+<p>The model mainly consists of three representation layers:
+a embeddings layer, a word sequence based LSTM-RNN layer (sequence layer), and finally a dependency subtree based LSTM-RNN layer (dependency layer).</p>
+
+<p><img src="/img/lstm_tree.jpg" alt="Relation Classification Network" /></p>
+
+<h2 id="embedding-layer">Embedding Layer</h2>
+
+<p>Embedding layer consists of words, part-of-speech (POS) tags, dependency relations.</p>
+
+<h2 id="sequence-layer">Sequence Layer</h2>
+
+<p>The sequence layer represents words in a linear sequence
+using the representations from the embedding layer. We represent the word sequence in a sentence with bidirectional LSTM-RNNs.
+The LSTM unit at t-th word receives the concatenation of word and POS embeddings as its input vector.</p>
+
+<p align="center">
+  <img src="/img/lstm_seq.jpg">
+</p>
+
+<p>We also concatenate the hidden state vectors of the two directions’ LSTM units corresponding to each word (denoted as ↑ht and ↓ht) as its output vector (st), and pass it to the subsequent layers.</p>
+
+<h2 id="entity-detection">Entity Detection</h2>
+
+<p>We perform entity detection on top of the sequence
+layer. We employ a two-layered NN with an hidden layer and a softmax output layer for entity detection.</p>
+
+<h2 id="dependency-layer">Dependency Layer</h2>
+
+<p>The dependency layer represents a relation between a pair of two target words (corresponding to a relation candidate in relation classification) in
+the dependency tree.</p>
+
+<p>This layer mainly focuses on the shortest path between a pair of target words in the dependency tree (i.e., the path between the least common node and the two target words).</p>
+
+<p>We employ bidirectional tree-structured LSTMRNNs (i.e., bottom-up and top-down) to represent a relation candidate by capturing the dependency
+structure around the target word pair. This bidirectional structure propagates to each node not only the information from the leaves but also information from the root. This is especially important for relation classification, which makes use of argument nodes near the bottom of the tree, and our top-down LSTM-RNN sends information from the top of the tree to such near-leaf nodes (unlike in standard bottom-up LSTM-RNNs).</p>
+
+<p>Tree-structured LSTM-RNN&rsquo;s equations :
+<p align="center">
+  <img src="/img/lstm_tree_eq.jpg">
+</p></p>
+
+<p>While we use one node from Shortest Dependency path, then the hidden and current states of the children of this node in Dependency Tree are taken as previous state in LSTM.</p>
+
+<p>We stack the dependency layers (corresponding to relation candidates) on top of the sequence layer to incorporate both word sequence and dependency tree structure information into the output.
+The dependency-layer LSMT unit at the t-th word recives as input, the concatenation of its corresponding hidden state vectors st in the sequence layer, dependency type embedding.</p>
+
+<h2 id="relation-classification">Relation Classification</h2>
+
+<p>The relation candidate vector is constructed as
+the concatenation dp = [↑hpA; ↓hp1; ↓hp2], where ↑hpA is the hidden state vector of the top LSTM unit in the bottom-up LSTM-RNN (representing the lowest common ancestor of the target word pair p), and ↓hp1, ↓hp2 are the hidden state vectors of the two LSTM units representing the first and second target words in the top-down LSTMRNN.</p>
+
+<p>Similarly to the entity detection, we employ a two-layered NN with an hidden layer and a softmax output layer.</p>
+
+<h2 id="training">Training</h2>
+
+<p>We update the model parameters including weights, biases, and embeddings by BPTT and Adam gradient descent with gradient clipping, L2-regularization
+(we regularize weights W and U, not the bias terms b). We also apply dropout to the embedding layer and to the final hidden layers for entity detection and relation classification. We employ entity pretraining to improve the model.</p>
+
+<h2 id="data">Data</h2>
+
+<p>SemEval-2010 Task 8 defines 9 relation types between nominals and a tenth type Other when two nouns have none of these relations and no direction is considered.</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/tags/natural-langauge-processing">natural-langauge-processing</a>
+  
+</div>
+
+
+
+
+    
+    
+    
+
+    
+      
+      
+      
+      
+
+      
+      
+      
+      
+    
+
+  </div>
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="https://sshanu.github.io/project/word-sense/"><span
+      aria-hidden="true">&larr;</span> Word Sense Classification</a></li>
+    
+
+    
+    <li class="next"><a href="https://sshanu.github.io/project/relation-classification-1/">Relation Classification using LSTMs on Sequences and Tree Structures <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 Shanu Kumar &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

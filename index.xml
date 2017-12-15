@@ -128,93 +128,35 @@ it call it ’impurity’.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Grain Assaying</title>
+      <title>Handwritten Character Recognition</title>
       <link>https://sshanu.github.io/project/handwriting-recognition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sshanu.github.io/project/handwriting-recognition/</guid>
       <description>
 
-&lt;p&gt;NAM (National Agriculture Market) is an online portal introduced
-by the government, to connect all the farmers online
-with the traders, so that farmers get the best price for their
-produce.&lt;/p&gt;
+&lt;p&gt;We implemented a neural architecture consisting of two layers of Convolutional Neural Networks followed by max-pooling and ReLU, and two fully connected layers.
+We used &lt;a href=&#34;https://github.com/torch/torch7&#34; target=&#34;_blank&#34;&gt;Torch&lt;/a&gt; as a framework for implementing the architecture.&lt;/p&gt;
 
-&lt;p&gt;Our project aimed to facilitate the process by introducing
-automatic grain quality assessment from an image of
-spread out sample of grain.&lt;/p&gt;
+&lt;p&gt;Our Code is available at &lt;a href=&#34;https://github.com/Sshanu/ml_HR&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; and for more details: &lt;a href=&#34;https://github.com/Sshanu/ml_HR/wiki&#34; target=&#34;_blank&#34;&gt;Wiki&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/ankuPRK/DIP-Grain-Project&#34; target=&#34;_blank&#34;&gt;Github Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
 
-&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
-
-&lt;p&gt;We couldn&amp;rsquo;t find any weight existing grain dataset for this task, so we collected 8 samples of different qualities of wheat grain from the Anaj mandi, Kanpur. Grains of each sample were manually separated into three categories: full grain, broken grain and foreign particles.&lt;/p&gt;
-
-&lt;h2 id=&#34;preprocessing&#34;&gt;Preprocessing&lt;/h2&gt;
-
-&lt;p&gt;The image taken should have a mono-color background
-and sufficiently illuminated. In our dataset we have chosen
-green as background color.
-* To remove the shadow effect of grains we take the red channel of the image which doesn’t have shadows in case when background is green.
-* We then employ gaussian filter to remove noise and smoothen it.
-* The image is further sharpened to enhance the edges of overlapping grains.
-* It is then converted to binary image using threshold.
-* The binarized image has lots of dots and overlapping particles. We use morphological processes for removing stray dots.&lt;/p&gt;
-
-&lt;h2 id=&#34;segmentation&#34;&gt;Segmentation&lt;/h2&gt;
-
-&lt;p&gt;This step takes binary image as input and gives the clusters of
-grains as output. The steps are
-* Find all the connected components in the binary image.
-* Remove all components with pixel area less than a threshold.
-* Each remaining component is a particle segment.&lt;/p&gt;
-
-&lt;h2 id=&#34;watershed-segmentation&#34;&gt;Watershed Segmentation&lt;/h2&gt;
-
-&lt;p&gt;The term ”Watershed” means the ridges that separate water
-flowing to different basin. In such scenario water in
-each basin travels downward towards it’s local minima. A
-grayscale image can be thought of as a surface whose height
-at each point is proportional to the grayscale value at each
-point. The lighter pixels are near peaks while darker pixels
-are near catchment basin. To construct such type of surface,
-the distance transform of the image is found. The distance
-transform calculates distance of nearest pixel with non-zero
-value for each point. The distance transform is further inverted
-to construct catchment basin instead of peaks. We use
-matlab’s inbuilt function that uses Fernand Meyer algorithm to find watershed segmentation of the image.&lt;/p&gt;
-
-&lt;h2 id=&#34;distance-tranform&#34;&gt;Distance Tranform&lt;/h2&gt;
-
-&lt;p&gt;The distance transform is an operator normally only applied to binary images. The result of the transform is a graylevel image that looks similar to the input image, except that the graylevel intensities of points inside foreground regions are changed to show the distance to the closest boundary from each point.
-&lt;p align=&#34;center&#34;&gt;
-  &lt;img src=&#34;https://sshanu.github.io/img/dt.gif&#34;&gt;
-&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;
-  &lt;img src=&#34;https://sshanu.github.io/img/dt_fig.png&#34;&gt;
-&lt;/p&gt;
-&lt;span class=&#34;caption text-muted&#34;&gt;Distance Tranform Example&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;The steps of segmentation can be summarised as
-* Take the binary image of segment in question.
-* Obtain its distance transform.
-* Invert the Distance transform and remove unwanted minimas.
-* Apply watershed segmentation.&lt;/p&gt;
-
-&lt;h2 id=&#34;feature-extraction&#34;&gt;Feature Extraction&lt;/h2&gt;
-
-&lt;p&gt;Each segment is taken and the following
-basic features are extracted from it: color, size : A_seg / A_avg  where A_seq is pixel area of segment, the major axis length and minor axis length of segment.&lt;/p&gt;
-
-&lt;h2 id=&#34;classification&#34;&gt;Classification&lt;/h2&gt;
-
-&lt;p&gt;For Classification we use following classifiers:
-SVM and KNN with n = 5.&lt;/p&gt;
-
-&lt;h2 id=&#34;result&#34;&gt;Result&lt;/h2&gt;
-
-&lt;p&gt;Maximum accuracy is achived using KNN as classifier. But the overlapping grains are being interpreted by the model as some combined shape and
-it call it ’impurity’.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-lua&#34;&gt;model = nn.Sequential()
+model:add(nn.SpatialConvolution(3,6,5,5))
+model:add(nn.SpatialMaxPooling(2,2,2,2))
+model:add(nn.ReLU())
+model:add(nn.SpatialConvolution(6,16,5,5))
+model:add(nn.SpatialMaxPooling(2,2,2,2))
+model:add(nn.ReLU())
+model:add(nn.View(16*2*2))
+model:add(nn.Linear(16*2*2,120))
+model:add(nn.ReLU())
+model:add(nn.Linear(120,80))
+model:add(nn.ReLU())
+model:add(nn.Linear(80,36))
+model:add(nn.LogSoftMax())
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -282,50 +224,9 @@ Our aim is to implement the &lt;a href=&#34;https://arxiv.org/pdf/1611.01603.pdf
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sshanu.github.io/project/object-tracking/</guid>
-      <description>
+      <description>&lt;p&gt;Last year in winters, I worked on object tracking. First I tried to increase the accuracy of &lt;a href=&#34;http://www.robots.ox.ac.uk/~joao/circulant/&#34; target=&#34;_blank&#34;&gt;Tracker&lt;/a&gt; build with Kernelized Correlation Filters. For calculating W in linear regression , we have to invert $X*X^T$ which takes $O(n^3)$ time. This can be reduced by taking DFT of $X$. And then  I used pre-trained VGG16 network as feature maps to increase the accuracy. Then studied papers on various object detectors like SSD, Faster RCNN. I also read the paper on GOTURN which a tracker build by neural netorks.&lt;/p&gt;
 
-&lt;h2 id=&#34;relation-classification-using-lstm-networks-along-shortest-dependency-paths&#34;&gt;Relation Classification using LSTM Networks along Shortest Dependency Paths&lt;/h2&gt;
-
-&lt;p&gt;First we implemented a architecture following a paper &lt;a href=&#34;https://pdfs.semanticscholar.org/0f44/366c1e1446cfd51258c68bd1da14fe9c7f10.pdf?_ga=2.136229944.807016038.1498203433-264083776.1497442258&#34; target=&#34;_blank&#34;&gt;Classifying Relations via Long Short Term Memory Networks along Shortest Dependency Paths&lt;/a&gt; by Yan Xu and others.
-This neural architecture utilizes the shortest dependency path between two entities in a sentence.
-The shortest dependency paths retain most relevant information (to relation classification), while eliminating irrelevant words in the sentence.&lt;/p&gt;
-
-&lt;h2 id=&#34;sdp-lstm-model&#34;&gt;SDP-LSTM Model&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://sshanu.github.io/img/lca.jpg&#34; alt=&#34;LCA Shortest Path&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;First sentence is parsed to a dependency tree by the &lt;a href=&#34;https://nlp.stanford.edu/software/stanford-dependencies.shtml&#34; target=&#34;_blank&#34;&gt;Stanford parser&lt;/a&gt;, the shortest dependency path(SDP) is extracted as the input of our network.&lt;/p&gt;
-
-&lt;p&gt;Dependency trees are a kind of directed graph, so direction of relation matters. Hence we separate SDP into two sub-paths, each from an entity to the common ancestor node. Along the SDP, three different types of information(as channels) are used, including the words, POS tags, dependency types.
-In each channel, e.g. words, are mapped to real-valued vectors, called embeddings, which capture the underlying meanings of the inputs.&lt;/p&gt;
-
-&lt;h2 id=&#34;channels&#34;&gt;Channels&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Each word in a given sentence is mapped to a real-valued vector by looking up in a word embedding table of Glove (pretrained).&lt;/li&gt;
-&lt;li&gt;Since word embeddings are obtained on a generic corpus of a large scale, the information they contain may not agree with a specific sentence. We deal with this problem by allying each input word with its POS tag, e.g., noun, verb, etc.&lt;/li&gt;
-&lt;li&gt;The dependency types between words provide grammatical relationships in a sentence that can easily be understood and effectively used by people
-without linguistic expertise
-Two recurrent neural networks pick up information along the left and right sub-paths of the SDP.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;recurrent-neural-networks&#34;&gt;Recurrent Neural Networks&lt;/h2&gt;
-
-&lt;p&gt;Recurrent Neural Networks have one problem, known as gradient vanishing or exploding problem. Long short term memory(LSTM) overcome this problem by introducing an adaptive gating mechanism, which keep the previous state and memorize the extracted features of the current data input.
-LSTM-based recurrent neural network comprises four components: an input gate, a forget gate, an output gate, and a memory cell.
-The two SDP-LSTM  propagate bottom-up from the entities to their common ancestor. This way, the model is direction-sensitive.&lt;/p&gt;
-
-&lt;p&gt;A max pooling layer packs, for each sub-path, the recurrent network’s states, to a fixed vector by taking the maximum value in each dimension.
-The pooling layers from different channels are concatenated, and then connected to a hidden layer. Finally, we have a softmax output layer for
-classification.&lt;/p&gt;
-
-&lt;h2 id=&#34;training&#34;&gt;Training&lt;/h2&gt;
-
-&lt;p&gt;We update the model parameters including weights, biases, and embeddings by BPTT and Adam gradient descent with L2-regularization (we regularize weights W and U, not the bias terms b).&lt;/p&gt;
-
-&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
-
-&lt;p&gt;SemEval-2010 Task 8 defines 9 relation types between nominals and a tenth type Other when two nouns have none of these relations. Direction is considered and hence model is trained over 19 relation classes.&lt;/p&gt;
+&lt;p&gt;The Code is available at &lt;a href=&#34;https://github.com/Sshanu/KCFpy-with-conv-nets&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -464,55 +365,12 @@ the concatenation dp = [↑hpA; ↓hp1; ↓hp2], where ↑hpA is the hidden stat
     </item>
     
     <item>
-      <title>Word Sense Classification</title>
+      <title>Word Sense Disambiguation</title>
       <link>https://sshanu.github.io/project/word-sense/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sshanu.github.io/project/word-sense/</guid>
-      <description>
-
-&lt;h2 id=&#34;relation-classification-using-lstm-networks-along-shortest-dependency-paths&#34;&gt;Relation Classification using LSTM Networks along Shortest Dependency Paths&lt;/h2&gt;
-
-&lt;p&gt;First we implemented a architecture following a paper &lt;a href=&#34;https://pdfs.semanticscholar.org/0f44/366c1e1446cfd51258c68bd1da14fe9c7f10.pdf?_ga=2.136229944.807016038.1498203433-264083776.1497442258&#34; target=&#34;_blank&#34;&gt;Classifying Relations via Long Short Term Memory Networks along Shortest Dependency Paths&lt;/a&gt; by Yan Xu and others.
-This neural architecture utilizes the shortest dependency path between two entities in a sentence.
-The shortest dependency paths retain most relevant information (to relation classification), while eliminating irrelevant words in the sentence.&lt;/p&gt;
-
-&lt;h2 id=&#34;sdp-lstm-model&#34;&gt;SDP-LSTM Model&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://sshanu.github.io/img/lca.jpg&#34; alt=&#34;LCA Shortest Path&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;First sentence is parsed to a dependency tree by the &lt;a href=&#34;https://nlp.stanford.edu/software/stanford-dependencies.shtml&#34; target=&#34;_blank&#34;&gt;Stanford parser&lt;/a&gt;, the shortest dependency path(SDP) is extracted as the input of our network.&lt;/p&gt;
-
-&lt;p&gt;Dependency trees are a kind of directed graph, so direction of relation matters. Hence we separate SDP into two sub-paths, each from an entity to the common ancestor node. Along the SDP, three different types of information(as channels) are used, including the words, POS tags, dependency types.
-In each channel, e.g. words, are mapped to real-valued vectors, called embeddings, which capture the underlying meanings of the inputs.&lt;/p&gt;
-
-&lt;h2 id=&#34;channels&#34;&gt;Channels&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Each word in a given sentence is mapped to a real-valued vector by looking up in a word embedding table of Glove (pretrained).&lt;/li&gt;
-&lt;li&gt;Since word embeddings are obtained on a generic corpus of a large scale, the information they contain may not agree with a specific sentence. We deal with this problem by allying each input word with its POS tag, e.g., noun, verb, etc.&lt;/li&gt;
-&lt;li&gt;The dependency types between words provide grammatical relationships in a sentence that can easily be understood and effectively used by people
-without linguistic expertise
-Two recurrent neural networks pick up information along the left and right sub-paths of the SDP.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;recurrent-neural-networks&#34;&gt;Recurrent Neural Networks&lt;/h2&gt;
-
-&lt;p&gt;Recurrent Neural Networks have one problem, known as gradient vanishing or exploding problem. Long short term memory(LSTM) overcome this problem by introducing an adaptive gating mechanism, which keep the previous state and memorize the extracted features of the current data input.
-LSTM-based recurrent neural network comprises four components: an input gate, a forget gate, an output gate, and a memory cell.
-The two SDP-LSTM  propagate bottom-up from the entities to their common ancestor. This way, the model is direction-sensitive.&lt;/p&gt;
-
-&lt;p&gt;A max pooling layer packs, for each sub-path, the recurrent network’s states, to a fixed vector by taking the maximum value in each dimension.
-The pooling layers from different channels are concatenated, and then connected to a hidden layer. Finally, we have a softmax output layer for
-classification.&lt;/p&gt;
-
-&lt;h2 id=&#34;training&#34;&gt;Training&lt;/h2&gt;
-
-&lt;p&gt;We update the model parameters including weights, biases, and embeddings by BPTT and Adam gradient descent with L2-regularization (we regularize weights W and U, not the bias terms b).&lt;/p&gt;
-
-&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
-
-&lt;p&gt;SemEval-2010 Task 8 defines 9 relation types between nominals and a tenth type Other when two nouns have none of these relations. Direction is considered and hence model is trained over 19 relation classes.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/Sshanu/Word-Sense-Disambiguation&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -63,7 +63,7 @@
   
   <meta property="og:site_name" content="Shanu Kumar">
   <meta property="og:url" content="https://sshanu.github.io/project/handwriting-recognition/">
-  <meta property="og:title" content="Grain Assaying | Shanu Kumar">
+  <meta property="og:title" content="Handwritten Character Recognition | Shanu Kumar">
   <meta property="og:description" content="">
   <meta property="og:locale" content="en-us">
   
@@ -73,7 +73,7 @@
 
   
 
-  <title>Grain Assaying | Shanu Kumar</title>
+  <title>Handwritten Character Recognition | Shanu Kumar</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" class="dark">
@@ -188,7 +188,7 @@
   <div class="article-container">
 
     <div class="pub-title">
-      <h1 itemprop="name">Grain Assaying</h1>
+      <h1 itemprop="name">Handwritten Character Recognition</h1>
       <span class="pub-authors" itemprop="author">&nbsp;</span>
       <span class="pull-right">
         
@@ -196,7 +196,7 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Grain%20Assaying&amp;url=https%3a%2f%2fsshanu.github.io%2fproject%2fhandwriting-recognition%2f"
+         href="https://twitter.com/intent/tweet?text=Handwritten%20Character%20Recognition&amp;url=https%3a%2f%2fsshanu.github.io%2fproject%2fhandwriting-recognition%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
@@ -210,21 +210,21 @@
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsshanu.github.io%2fproject%2fhandwriting-recognition%2f&amp;title=Grain%20Assaying"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsshanu.github.io%2fproject%2fhandwriting-recognition%2f&amp;title=Handwritten%20Character%20Recognition"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fsshanu.github.io%2fproject%2fhandwriting-recognition%2f&amp;title=Grain%20Assaying"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fsshanu.github.io%2fproject%2fhandwriting-recognition%2f&amp;title=Handwritten%20Character%20Recognition"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Grain%20Assaying&amp;body=https%3a%2f%2fsshanu.github.io%2fproject%2fhandwriting-recognition%2f">
+         href="mailto:?subject=Handwritten%20Character%20Recognition&amp;body=https%3a%2f%2fsshanu.github.io%2fproject%2fhandwriting-recognition%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -240,86 +240,28 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>NAM (National Agriculture Market) is an online portal introduced
-by the government, to connect all the farmers online
-with the traders, so that farmers get the best price for their
-produce.</p>
+<p>We implemented a neural architecture consisting of two layers of Convolutional Neural Networks followed by max-pooling and ReLU, and two fully connected layers.
+We used <a href="https://github.com/torch/torch7" target="_blank">Torch</a> as a framework for implementing the architecture.</p>
 
-<p>Our project aimed to facilitate the process by introducing
-automatic grain quality assessment from an image of
-spread out sample of grain.</p>
+<p>Our Code is available at <a href="https://github.com/Sshanu/ml_HR" target="_blank">GitHub</a> and for more details: <a href="https://github.com/Sshanu/ml_HR/wiki" target="_blank">Wiki</a>.</p>
 
-<p><a href="https://github.com/ankuPRK/DIP-Grain-Project" target="_blank">Github Repository</a></p>
+<h2 id="model">Model</h2>
 
-<h2 id="dataset">Dataset</h2>
-
-<p>We couldn&rsquo;t find any weight existing grain dataset for this task, so we collected 8 samples of different qualities of wheat grain from the Anaj mandi, Kanpur. Grains of each sample were manually separated into three categories: full grain, broken grain and foreign particles.</p>
-
-<h2 id="preprocessing">Preprocessing</h2>
-
-<p>The image taken should have a mono-color background
-and sufficiently illuminated. In our dataset we have chosen
-green as background color.
-* To remove the shadow effect of grains we take the red channel of the image which doesn’t have shadows in case when background is green.
-* We then employ gaussian filter to remove noise and smoothen it.
-* The image is further sharpened to enhance the edges of overlapping grains.
-* It is then converted to binary image using threshold.
-* The binarized image has lots of dots and overlapping particles. We use morphological processes for removing stray dots.</p>
-
-<h2 id="segmentation">Segmentation</h2>
-
-<p>This step takes binary image as input and gives the clusters of
-grains as output. The steps are
-* Find all the connected components in the binary image.
-* Remove all components with pixel area less than a threshold.
-* Each remaining component is a particle segment.</p>
-
-<h2 id="watershed-segmentation">Watershed Segmentation</h2>
-
-<p>The term ”Watershed” means the ridges that separate water
-flowing to different basin. In such scenario water in
-each basin travels downward towards it’s local minima. A
-grayscale image can be thought of as a surface whose height
-at each point is proportional to the grayscale value at each
-point. The lighter pixels are near peaks while darker pixels
-are near catchment basin. To construct such type of surface,
-the distance transform of the image is found. The distance
-transform calculates distance of nearest pixel with non-zero
-value for each point. The distance transform is further inverted
-to construct catchment basin instead of peaks. We use
-matlab’s inbuilt function that uses Fernand Meyer algorithm to find watershed segmentation of the image.</p>
-
-<h2 id="distance-tranform">Distance Tranform</h2>
-
-<p>The distance transform is an operator normally only applied to binary images. The result of the transform is a graylevel image that looks similar to the input image, except that the graylevel intensities of points inside foreground regions are changed to show the distance to the closest boundary from each point.
-<p align="center">
-  <img src="/img/dt.gif">
-</p>
-<p align="center">
-  <img src="/img/dt_fig.png">
-</p>
-<span class="caption text-muted">Distance Tranform Example</span></p>
-
-<p>The steps of segmentation can be summarised as
-* Take the binary image of segment in question.
-* Obtain its distance transform.
-* Invert the Distance transform and remove unwanted minimas.
-* Apply watershed segmentation.</p>
-
-<h2 id="feature-extraction">Feature Extraction</h2>
-
-<p>Each segment is taken and the following
-basic features are extracted from it: color, size : A_seg / A_avg  where A_seq is pixel area of segment, the major axis length and minor axis length of segment.</p>
-
-<h2 id="classification">Classification</h2>
-
-<p>For Classification we use following classifiers:
-SVM and KNN with n = 5.</p>
-
-<h2 id="result">Result</h2>
-
-<p>Maximum accuracy is achived using KNN as classifier. But the overlapping grains are being interpreted by the model as some combined shape and
-it call it ’impurity’.</p>
+<pre><code class="language-lua">model = nn.Sequential()
+model:add(nn.SpatialConvolution(3,6,5,5))
+model:add(nn.SpatialMaxPooling(2,2,2,2))
+model:add(nn.ReLU())
+model:add(nn.SpatialConvolution(6,16,5,5))
+model:add(nn.SpatialMaxPooling(2,2,2,2))
+model:add(nn.ReLU())
+model:add(nn.View(16*2*2))
+model:add(nn.Linear(16*2*2,120))
+model:add(nn.ReLU())
+model:add(nn.Linear(120,80))
+model:add(nn.ReLU())
+model:add(nn.Linear(80,36))
+model:add(nn.LogSoftMax())
+</code></pre>
 
     </div>
 

@@ -238,50 +238,9 @@
     
 
     <div class="article-style" itemprop="articleBody">
-      
+      <p>Last year in winters, I worked on object tracking. First I tried to increase the accuracy of <a href="http://www.robots.ox.ac.uk/~joao/circulant/" target="_blank">Tracker</a> build with Kernelized Correlation Filters. For calculating W in linear regression , we have to invert $X*X^T$ which takes $O(n^3)$ time. This can be reduced by taking DFT of $X$. And then  I used pre-trained VGG16 network as feature maps to increase the accuracy. Then studied papers on various object detectors like SSD, Faster RCNN. I also read the paper on GOTURN which a tracker build by neural netorks.</p>
 
-<h2 id="relation-classification-using-lstm-networks-along-shortest-dependency-paths">Relation Classification using LSTM Networks along Shortest Dependency Paths</h2>
-
-<p>First we implemented a architecture following a paper <a href="https://pdfs.semanticscholar.org/0f44/366c1e1446cfd51258c68bd1da14fe9c7f10.pdf?_ga=2.136229944.807016038.1498203433-264083776.1497442258" target="_blank">Classifying Relations via Long Short Term Memory Networks along Shortest Dependency Paths</a> by Yan Xu and others.
-This neural architecture utilizes the shortest dependency path between two entities in a sentence.
-The shortest dependency paths retain most relevant information (to relation classification), while eliminating irrelevant words in the sentence.</p>
-
-<h2 id="sdp-lstm-model">SDP-LSTM Model</h2>
-
-<p><img src="/img/lca.jpg" alt="LCA Shortest Path" /></p>
-
-<p>First sentence is parsed to a dependency tree by the <a href="https://nlp.stanford.edu/software/stanford-dependencies.shtml" target="_blank">Stanford parser</a>, the shortest dependency path(SDP) is extracted as the input of our network.</p>
-
-<p>Dependency trees are a kind of directed graph, so direction of relation matters. Hence we separate SDP into two sub-paths, each from an entity to the common ancestor node. Along the SDP, three different types of information(as channels) are used, including the words, POS tags, dependency types.
-In each channel, e.g. words, are mapped to real-valued vectors, called embeddings, which capture the underlying meanings of the inputs.</p>
-
-<h2 id="channels">Channels</h2>
-
-<ul>
-<li>Each word in a given sentence is mapped to a real-valued vector by looking up in a word embedding table of Glove (pretrained).</li>
-<li>Since word embeddings are obtained on a generic corpus of a large scale, the information they contain may not agree with a specific sentence. We deal with this problem by allying each input word with its POS tag, e.g., noun, verb, etc.</li>
-<li>The dependency types between words provide grammatical relationships in a sentence that can easily be understood and effectively used by people
-without linguistic expertise
-Two recurrent neural networks pick up information along the left and right sub-paths of the SDP.</li>
-</ul>
-
-<h2 id="recurrent-neural-networks">Recurrent Neural Networks</h2>
-
-<p>Recurrent Neural Networks have one problem, known as gradient vanishing or exploding problem. Long short term memory(LSTM) overcome this problem by introducing an adaptive gating mechanism, which keep the previous state and memorize the extracted features of the current data input.
-LSTM-based recurrent neural network comprises four components: an input gate, a forget gate, an output gate, and a memory cell.
-The two SDP-LSTM  propagate bottom-up from the entities to their common ancestor. This way, the model is direction-sensitive.</p>
-
-<p>A max pooling layer packs, for each sub-path, the recurrent network’s states, to a fixed vector by taking the maximum value in each dimension.
-The pooling layers from different channels are concatenated, and then connected to a hidden layer. Finally, we have a softmax output layer for
-classification.</p>
-
-<h2 id="training">Training</h2>
-
-<p>We update the model parameters including weights, biases, and embeddings by BPTT and Adam gradient descent with L2-regularization (we regularize weights W and U, not the bias terms b).</p>
-
-<h2 id="data">Data</h2>
-
-<p>SemEval-2010 Task 8 defines 9 relation types between nominals and a tenth type Other when two nouns have none of these relations. Direction is considered and hence model is trained over 19 relation classes.</p>
+<p>The Code is available at <a href="https://github.com/Sshanu/KCFpy-with-conv-nets" target="_blank">GitHub</a>.</p>
 
     </div>
 
@@ -410,6 +369,13 @@ classification.</p>
       <script>hljs.initHighlightingOnLoad();</script>
     
 
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
     
     
 
